@@ -1,5 +1,5 @@
 # New Coin Listed - BOT Telegram
-This project offers you to host a telegram bot detecting the new coins listed on different chains: Ethereum, Solana, Cardano, Polygon, BSC...
+This project allows you to host a telegram bot detecting new coins listed on different chains: Ethereum, Solana, Cardano, Polygon, BSC...
 
 You can host it directly on your machine or on a remote server to receive notifications at any time through the Telegram messaging application.
 
