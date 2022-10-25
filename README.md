@@ -24,7 +24,7 @@ Then run init.sh :
 SetUp a bot on Telegram by using @BotFather
 Create a new public group and add the bot.
 Request the API :[https://api.telegram.org/bot<YourBOTToken>/getUpdates](https://api.telegram.org/bot<YourBOTToken>/getUpdates)
-And get yout chatid.
+And get your chat_id.
   
 In init.sh edit $TOKEN and $CHATID with YOUR OWN values.
 
