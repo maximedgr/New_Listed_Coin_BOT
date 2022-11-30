@@ -46,4 +46,8 @@ Close the terminal and you should get a sucess message.
 ```
 > crontab: installing new crontab
 ```
+Check that cron is running :
+```
+ps -ef | grep cron
+```
 You did it ! Check your telegram channel and enjoy the latest Listed Coin notifications !
