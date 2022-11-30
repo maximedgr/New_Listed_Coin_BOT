@@ -20,6 +20,7 @@ if [[ $line =~ $pat2 ]];
 then
 price=$(echo $line | grep -Po '[\d\.]+(?=.*class="td-price price text-right")')
 echo "Price: $price$" >>text.txt
+echo "$price" >> save_data.txt
 fi
 if [[ $line =~ $pat3 ]]; then
 chain=$(echo $line | grep -Po '(?<=class="font-bold">).*(?=</span>)')
@@ -68,7 +69,7 @@ fi
 done
 
 MESSAGE=$(head -n 44 text.txt) #You can change the value '44' in order to have more coin listed.
-# echo $MESSAGE
+echo $MESSAGE
 TOKEN='YOUR_TELEGRAM_TOKEN'
 CHAT_ID='YOUR_TELEGRAM_CHAT_ID'
 URL="https://api.telegram.org/bot$TOKEN/sendMessage"
@@ -77,6 +78,10 @@ curl -s -X POST $URL -d chat_id=$CHAT_ID -d text="$MESSAGE"
 
 rm text.txt #Delete the following 'rm' lines if you want to keep to whole token listing
 rm webpage.txt
+sed '11,$d' save_data.txt >> recap_data.txt
+rm save_data.txt
+
 echo "Done."
+
 
 #Project by @maximedgr - 2022 | Feel free to contribute 
