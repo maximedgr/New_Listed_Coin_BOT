@@ -40,7 +40,7 @@ $ crontab –e
 In the crontab terminal edit and write :
 ```
 30 * * * * <PATH_TO_init.sh>
-* 24 * * * <PATH_TO_recap.sh>
+0 0 * * * <PATH_TO_recap.sh>
 ```
 Close the terminal and you should get a sucess message.
 ```
