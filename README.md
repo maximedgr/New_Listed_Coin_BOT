@@ -42,6 +42,11 @@ In the crontab terminal edit and write :
 30 * * * * <PATH_TO_init.sh>
 0 0 * * * <PATH_TO_recap.sh>
 ```
+To running it every 2 minutes :
+```
+/2 * * * * <PATH_TO_init.sh> (use ~ or pwd to find path)
+0 0 * * * <PATH_TO_recap.sh>
+```
 Close the terminal and you should get a sucess message.
 ```
 > crontab: installing new crontab
